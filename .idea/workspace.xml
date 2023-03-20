@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c669e7b-766e-44b5-9e24-4b2c70e738f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HN_ JV221024_BS_TrinhTungDuong.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/bussiness/IProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/bussinessImp/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/run/ProductManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/bussinessImp/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/bussinessImp/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/run/ProductManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/run/ProductManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +43,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Product">
+  <component name="RunManager" selected="Application.ProductManagement">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HN_ JV221024_BS_TrinhTungDuong" />
@@ -74,8 +68,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ra.run.ProductManagement" />
+      <module name="HN_ JV221024_BS_TrinhTungDuong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ra.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProductManagement" />
         <item itemvalue="Application.Product" />
         <item itemvalue="Application.Main" />
       </list>
@@ -89,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679279603134</updated>
-      <workItem from="1679279604348" duration="6690000" />
+      <workItem from="1679279604348" duration="7793000" />
     </task>
     <servers />
   </component>
@@ -101,13 +109,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ra/bussinessImp/Product.java</url>
-          <line>114</line>
+          <line>116</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ra/bussinessImp/Product.java</url>
-          <line>130</line>
+          <line>133</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ra/bussinessImp/Product.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

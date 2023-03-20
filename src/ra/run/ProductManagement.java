@@ -7,23 +7,23 @@ import java.util.Scanner;
 
 public class ProductManagement {
 
-    private ArrayList<Product> products;
+    private static ArrayList<Product> products;
 
     public ProductManagement() {
         this.products = new ArrayList<>();
     }
 
-    public void addProducts(int n) {
+    public static void addProducts(int n) {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < n; i++) {
             Product product = new Product();
             product.inputData();
-            this.products.add(product);
+            products.add(product);
         }
     }
 
-    public void displayProducts() {
-        for (Product product : this.products) {
+    public static void displayProducts() {
+        for (Product product : products) {
             product.displayData();
         }
     }
@@ -32,10 +32,10 @@ public class ProductManagement {
 //        Collections.sort(this.products);
 //    }
 
-    public void removeProductById(int productId) {
-        for (Product product : this.products) {
+    public static void removeProductById(int productId) {
+        for (Product product : products) {
             if (product.getProductId() == productId) {
-                this.products.remove(product);
+                products.remove(product);
                 System.out.println("Product with ID " + productId + " has been removed.");
                 return;
             }
@@ -43,8 +43,8 @@ public class ProductManagement {
         System.out.println("Product with ID " + productId + " not found.");
     }
 
-    public void searchProductByName(String productName) {
-        for (Product product : this.products) {
+    public static void searchProductByName(String productName) {
+        for (Product product : products) {
             if (product.getProductName().equals(productName)) {
                 product.displayData();
                 return;
@@ -54,7 +54,7 @@ public class ProductManagement {
     }
 
     public void changeProductStatusById(int productId) {
-        for (Product product : this.products) {
+        for (Product product : products) {
             if (product.getProductId() == productId) {
                 product.setProductStatus(!product.getProductStatus());
                 System.out.println("Product status has been changed.");
@@ -64,17 +64,17 @@ public class ProductManagement {
         System.out.println("Product with ID " + productId + " not found.");
     }
 
-    public void startMenu() {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
         while (choice != 7) {
             System.out.println("****************JAVA-HACKATHON-05-BASIC-MENU***************");
             System.out.println("1. Nhập số sản phẩm và nhập thông tin sản phẩm");
             System.out.println("2. Hiển thị thông tin các sản phẩm");
-            System.out.println("3. Sắp xếp sản phẩm theo lợi nhuận tăng dần");
+//            System.out.println("3. Sắp xếp sản phẩm theo lợi nhuận tăng dần");
             System.out.println("4. Xóa sản phẩm theo mã sản phẩm");
             System.out.println("5. Tìm kiếm sản phẩm theo tên sản phẩm");
-            System.out.println("6. Thay đổi trạng thái của sản phẩm theo mã sản phẩm");
+//            System.out.println("6. Thay đổi trạng thái của sản phẩm theo mã sản phẩm");
             System.out.println("7. Thoát");
             System.out.println("Chọn một chức năng: ");
             choice = scanner.nextInt();
@@ -105,6 +105,6 @@ public class ProductManagement {
             System.out.println();
             break;
         }
-        while (choice != 7);
+        while (choice != 7) ;
     }
 }

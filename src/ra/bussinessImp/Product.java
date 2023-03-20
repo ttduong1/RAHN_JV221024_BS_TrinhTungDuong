@@ -92,40 +92,43 @@ public class Product implements IProduct {
     public void setProductStatus(Boolean productStatus) {
         this.productStatus = productStatus;
     }
-    public float caculateInterest(){
+
+    public float caculateInterest() {
         return exportPrice - importPrice;
     }
 
     @Override
     public void inputData() {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter producId: ");
-            productId = scanner.nextInt();
-            System.out.println("Enter productName: ");
-            productName = scanner.next();
-            System.out.println("Enter title: ");
-            title = scanner.next();
-            System.out.println("Enter descriptions: ");
-            descriptions = scanner.next();
-            System.out.println("Enter importPrice: ");
-            importPrice = scanner.nextFloat();
-            System.out.println("Enter exportPrice: ");
-            exportPrice = scanner.nextFloat();
-            System.out.println("Enter productStatus: ");
-            productStatus = scanner.nextBoolean();
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter producId: ");
+        productId = scanner.nextInt();
+        System.out.println("Enter productName: ");
+        productName = scanner.next();
+        System.out.println("Enter title: ");
+        title = scanner.next();
+        System.out.println("Enter descriptions: ");
+        scanner.nextLine();
+        descriptions = scanner.next();
+        System.out.println("Enter importPrice: ");
+        importPrice = scanner.nextFloat();
+        System.out.println("Enter exportPrice: ");
+        exportPrice = scanner.nextFloat();
+        System.out.println("Enter productStatus: ");
+        productStatus = scanner.nextBoolean();
+    }
 
     @Override
     public void displayData() {
         System.out.println("Product Id: " + productId);
         System.out.println("Product Name: " + productName);
-        System.out.println("Title: "+ title);
+        System.out.println("Title: " + title);
         System.out.println("Descriptions: " + descriptions);
         System.out.println("Import Price: " + importPrice);
         System.out.println("Export Price: " + exportPrice);
         System.out.println("Interest: " + interest);
         System.out.println("Product Status: " + productStatus);
     }
+
     public static void main(String[] args) {
         Product products = new Product();
         products.inputData();
